@@ -8,6 +8,7 @@ namespace HeartsDesireLuxury.Areas.Admin.Controllers
         public IActionResult AllProduct()
         {
             return View();
+        
         }
 
           public IActionResult Products()
