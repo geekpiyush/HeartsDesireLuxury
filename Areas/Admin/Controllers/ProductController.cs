@@ -11,7 +11,7 @@ namespace HeartsDesireLuxury.Areas.Admin.Controllers
         
         }
 
-          public IActionResult Products()
+          public IActionResult AddProduct()
         {
             return View();
         }
