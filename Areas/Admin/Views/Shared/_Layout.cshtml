@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] Admin-Dashboard</title>
     <style>
+
         body {
             margin: 0;
             padding: 0;
@@ -29,31 +30,29 @@
             list-style: none;
         }
 
-        .left-container ul li {
-            border: 1px solid black;
-            margin: 20px 10px;
-            padding: 10px 10px;
-        }
+            .left-container ul li {
+                border: 1px solid black;
+                margin: 20px 10px;
+                padding: 10px 10px;
+            }
 
-        .left-container ul li a {
-            color: black;
-            text-decoration: none;
-            font-size: 2.5rem;
-            display: block;
-        }
+                .left-container ul li a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 2.5rem;
+                    display: block;
+                }
     </style>
 </head>
-
 <body>
 
-    <link rel="stylesheet" href="/css/DashboardStyle.css">
 
     <div class="main-container">
         <div class="inner-container">
             <div class="left-container">
                 <ul>
                     <li><a href="admin/Product/AllProduct">Home</a></li>
-                    <li><a href="admin/Product/Products">Product</a></li>
+                    @* <li><a href="#" asp-controller="Product" asp-action="Products" asp-area="admin">Product</a></li> *@
                     <li><a href="">categories</a></li>
                     <li><a href="">Orders</a></li>
                     <li><a href="">User</a></li>
