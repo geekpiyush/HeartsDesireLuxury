@@ -55,6 +55,23 @@
         .navbar{
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
+
+        /* Dropdown Code */
+
+        /* .dropdown-content { */
+        /*     display: none; */
+        /*     position: absolute; */
+        /*     background-color: #f1f1f1; */
+        /*     min-width: 160px; */
+        /*     overflow: auto; */
+        /*     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        /*     z-index: 1; */
+        /* } */
+
+        .dropdown-content{
+            font-size:1.2rem;
+        }
+
     </style>
 </head>
 
@@ -80,7 +97,14 @@
             <div class="left-container">
                 <ul>
                     <li><a asp-controller="Home" asp-action="Index" asp-area="admin"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a asp-controller="Product" asp-action="Products" asp-area="admin"><i class="fa-solid fa-box"></i>Product</a></li>
+                    <li>
+                        <a>
+                            <i class="fa-solid fa-box"></i>Product
+                            <ul id="myDropdown" class="dropdown-content">
+                                <li><a>Add Product</a></li>
+                                <li><a asp-controller="Product" asp-action="AllProduct" asp-area="admin">View Product</a></li>
+                    </ul>    
+                    </a></li>
                     <li><a asp-controller="Categories" asp-action="Categories" asp-area="admin"><i class="fa-solid fa-layer-group"></i>Categories</a></li>
                     <li><a asp-controller="Orders" asp-action="Orders" asp-area="admin"><i class="fa-solid fa-cart-shopping"></i>Orders</a></li>
                     <li><a asp-controller="User" asp-action="User" asp-area="admin"><i class="fa-solid fa-user"></i>User</a></li>
@@ -95,10 +119,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 </body>
 
